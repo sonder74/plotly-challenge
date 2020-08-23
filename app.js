@@ -2,7 +2,7 @@
 var sourceData = [];
 
 // Load source data, make data promise, and push data to array
-d3.json("/data/samples.json").then(function(data) {
+d3.json("samples.json").then(function(data) {
     sourceData.push(data);
 
     // Populate dropdown menu
@@ -279,5 +279,5 @@ d3.json("/data/samples.json").then(function(data) {
 });
   
 // Set data promise
-const dataPromise = d3.json("/data/samples.json");
+const dataPromise = d3.json("samples.json");
 
